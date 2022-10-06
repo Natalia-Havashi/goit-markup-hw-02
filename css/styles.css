@@ -1,3 +1,32 @@
 body{
     background-color: #FFFFFF;
 }
+.list {
+    list-style: none;
+}
+
+.site-nav 
+{
+    color: #212121;
+}
+
+.site-nav :hover,
+.site-nav :focus
+{color: #2196F3;
+
+}
+
+.auth-nav {
+    color: #757575;
+}
+.auth-nav :hover,
+.auth-nav :focus {
+    color: #2196F3;
+}
+.section-title{
+    color: #212121
+}
+.text{
+    color: #757575
+}
+
