@@ -4,7 +4,7 @@ body{
 .list {
     list-style: none;
 }
-
+/* Header */
 .site-nav 
 {
     color: #212121;
@@ -23,6 +23,7 @@ body{
 .auth-nav :focus {
     color: #2196F3;
 }
+/* Main */
 .section-title{
     color: #212121
 }
