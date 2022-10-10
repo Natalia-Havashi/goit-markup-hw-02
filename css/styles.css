@@ -5,16 +5,21 @@
     --main-color:#757575;
     --name-color:#212121;
     --background-color:#2F303A;
+    --logo-color:#000000;
+    --active-color:#188CE8;
 }
 
 body{
     font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+
 }
 .link{
     text-decoration: none;
 }
 .list{
     list-style: none;
+    
 }
 
 /* HEADER */
@@ -24,10 +29,11 @@ font-weight: 700;
 font-size: 26px;
 line-height:calc(31 / 26);
 letter-spacing: 0.03em;
-color: #000000;
+color:var(--logo-color);
 }
+
 .first-part{
-    color:var(--accent-color);
+color:var(--accent-color);
 }
 
 .header-nav-link{
@@ -48,6 +54,8 @@ font-size: 14px;
 line-height:calc(16 / 14);
 letter-spacing: 0.02em;
 color:var(--main-color);
+text-decoration: none;
+
 }
 .header-mail-link:hover,
 .header-mail-link:focus{
@@ -58,6 +66,9 @@ color:var(--main-color);
     color:var(--accent-color);
 }
 /* ORDER A SERVICE */
+.order-service{
+    background:var(--background-color);
+}
 
 .main-title{
 font-weight: 900;
@@ -67,7 +78,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
-background:var(--background-color);
+
 
 }
 .button{
@@ -81,6 +92,23 @@ letter-spacing: 0.06em;
 color: #FFFFFF;
 background:var(--accent-color);
 cursor:pointer;
+font-family: 'Roboto';
+}
+.button:focus{
+color: var(--active-color);
+}
+
+.visually-hidden{
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
 }
 .main-item{
 font-weight: 700;
@@ -100,6 +128,17 @@ color:var(--main-color);
 
 
 /* WORK */
+.team{
+background: #F5F4FA;
+}
+.list-name{
+background: #FFFFFF;
+/* box-shadow: 0px 1px 3px
+rgba(0, 0, 0, 0.12), 0px 1px 1px
+rgba(0, 0, 0, 0.14), 0px 2px 1px
+rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px; */
+}
 .work-list{
 font-weight: 700;
 font-size: 36px;
@@ -140,6 +179,7 @@ font-size: 14px;
 line-height:calc(24 / 14);
 letter-spacing: 0.03em;
 color: #FFFFFF;
+font-style: normal;
 }
 .footer-contact{
 font-weight: 400;
@@ -162,6 +202,7 @@ color:var(--name-color);
 background: #F5F4FA;
 border-radius: 4px;
 cursor:pointer;
+font-family: 'Roboto';
 }
 .main-button:hover{
 background:var(--accent-color);
